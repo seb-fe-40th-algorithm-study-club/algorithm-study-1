@@ -13,3 +13,13 @@ let set = new Set(newArr)
 let newSet = [...set] // 배열로 만들어주기 
 
 console.log(newSet.length)
+
+//2번째 방법 filter로 중복 제거해보기
+
+let newArr2 = input.map(el => el % 42)
+
+const uniqueArr = newArr.filter((el,i) => {
+    return newArr2.indexOf(el) === i;
+})
+
+console.log(uniqueArr.length)

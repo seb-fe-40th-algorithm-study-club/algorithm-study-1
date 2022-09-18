@@ -1,4 +1,5 @@
 //vscode
+const { sign } = require("crypto");
 const fs = require("fs");
 const input = fs
   .readFileSync(
@@ -15,12 +16,23 @@ const input = fs
 // OO => 1+2
 // OOO => 1+2+3
 
-let [n] = input;
-
-let sum = 0;
-let i = 0;
-let score = 0;
+let [n] = input,
+  i = 0;
+// for (let i = 1; i <= n; i++) {
+//   let sum = 0;
+//   let count = 0;
+//   for (let j = 0; j <= input[i].length; j++) {
+//     if (input[i][j] === "O") {
+//       sum += ++count;
+//     } else {
+//       count = 0;
+//     }
+//   }
+//   console.log(sum);
+//}
 while (i < +n) {
+  let sum = 0;
+  let score = 0;
   `${input[i + 1]}`.split("").forEach((cur) => {
     if (cur === "O") {
       // 만약 O라면 score++ -> 1 연속이라면 1+1
@@ -31,7 +43,5 @@ while (i < +n) {
     }
   });
   console.log(sum);
-  sum = 0; //값 초기화
-  score = 0; // 값 초기화
   i++;
 }

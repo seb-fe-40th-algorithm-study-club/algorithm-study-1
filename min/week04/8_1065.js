@@ -7,7 +7,6 @@ const input = Number(fs.readFileSync('/dev/stdin').toString().trim());
     for(let i=1; i <= input; i++){
         if(i <= 99){
             count++;
-            continue; 
         }  
         let gap1 = Number(String(i)[1])- Number(String(i)[0]);
         let gap2 = Number(String(i)[2])- Number(String(i)[1]);

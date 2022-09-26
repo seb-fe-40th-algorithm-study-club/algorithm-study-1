@@ -1,4 +1,4 @@
-* 구글링 참고 답 *
+//* 구글링 참고 답 *
 let fs = require("fs");
 let input = fs.readFileSync("/dev/stdin").toString().trim();
 let phone = {

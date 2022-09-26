@@ -1,9 +1,6 @@
+//크로아티아 알파벳
 //2941번
-
-//문자의 갯수만 알면 됨
-// = 문자 모두 삭제
-// - 문자 모두 삭제
-// dz, lj, nj 이어지는 것 찾기
+//단어가 주어졌을 때, 몇 개의 크로아티아 알파벳으로 이루어져 있는지 출력
 
 let fs = require('fs');
 let str = fs.readFileSync('/dev/stdin').toString().trim();

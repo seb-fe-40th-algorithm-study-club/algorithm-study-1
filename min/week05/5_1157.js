@@ -1,3 +1,6 @@
+//단어공부
+//알파벳 대소문자로 된 단어가 주어지면, 이 단어에서 가장 많이 사용된 알파벳이 무엇인지 알아내는 프로그램
+
 const fs = require('fs');
 const str = fs.readFileSync('/dev/stdin').toString().trim().toUpperCase()
 //입력값 대문자로 바꾸기 

@@ -1,3 +1,7 @@
+//상수
+//상수는 수를 다른 사람과 다르게 거꾸로 읽는다.
+//상수가 읽은 큰 수는?
+
 let fs = require('fs');
 let input = fs.readFileSync('/dev/stdin').toString().trim().split(" "); //['734', '893']
 

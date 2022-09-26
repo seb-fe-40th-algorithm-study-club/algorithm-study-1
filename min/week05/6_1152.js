@@ -1,4 +1,5 @@
 //단어의 개수
+//영어 대소문자와 공백으로 이루어진 문자열이 주어진다. 이 문자열에는 몇 개의 단어
 
 const fs = require('fs');
 const str = fs.readFileSync('/dev/stdin').toString().trim();

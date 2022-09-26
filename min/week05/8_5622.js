@@ -1,12 +1,13 @@
 //다이얼
+//할머니가 외운 단어가 주어졌을 때, 이 전화를 걸기 위해서 필요한 최소 시간
 
 let fs = require('fs');
 let str = fs.readFileSync('/dev/stdin').toString().trim();
 
 //숫자 1은 2초 
-//숫자 2는 3초 <=ABC
+//숫자 2는 3초 <-ABC
 //
-//숫자 9는 10초 <=WXYZ
+//숫자 9는 10초 <-WXYZ
 
 let time = [];
 

@@ -24,8 +24,8 @@ function quicksort(arr) {
   for (let i = 1; i < arr.length; i++) {
     arr[i] <= pivot ? left.push(arr[i]) : right.push(arr[i]);
   }
-  const Lsorted = quicksort(left); // left를 기준으로 다시 실행한다
-  const Rsorted = quicksort(right); // right를 기준으로 다시 실행한다.
+  const Lsorted = quicksort(left); // left를 기준으로 다시 실행한다. left가 정렬된 최종값이 반환
+  const Rsorted = quicksort(right); // right를 기준으로 다시 실행한다. Right 정렬된 최종값이 반환
   return [...Lsorted, pivot, ...Rsorted];
 
   // n.shift();

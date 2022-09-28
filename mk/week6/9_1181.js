@@ -22,6 +22,7 @@ const result = input.sort((a, b) => {
 });
 //set은 중복되지 않은 수만 객체에 넣어준것?
 console.log([...new Set(result)].join("\n"));
+
 // 메모리 초과
 // console.log(
 //   input

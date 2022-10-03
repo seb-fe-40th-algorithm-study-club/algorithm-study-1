@@ -1,4 +1,10 @@
-let input = [2, 1, 3];
+const fs = require("fs"); // fs 모듈 선언
+const input = fs
+  .readFileSync("/dev/stdin")
+  .toString()
+  .trim()
+  .split("\n")
+  .map(Number); // 입력 값 가져오기 + 데이터 정제
 let nums = input.slice(1);
 
 // Counting Sort (계수 정렬)
@@ -14,7 +20,9 @@ for (let i = 1; i < countingArray.length; i++)
   countingArray[i] += countingArray[i - 1];
 
 // sort
-for (let i = 0; i < nums.length; i++)
-  result[--countingArray[nums[i]]] = nums[i];
+for (let i = 0; i < nums.length; i++) {
+  result[countingArray[nums[i]]] = nums[i];
+  countingArray[nums[i]] -= 1;
+}
 
-console.log(result.join("\n").trim());
+console.log(result.join("\n"));

@@ -20,7 +20,7 @@ let input = require("fs")
   .trim()
   .split("\n");
 
-const totalnum = Number(input.shift());
+const iter = Number(input.shift());
 
 let arr = [];
 

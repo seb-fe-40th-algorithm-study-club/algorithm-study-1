@@ -51,7 +51,7 @@ for(let key in obj) {
         // result 리셋 -> 큰 값이 여러개 있을 수 있으니 
         result = [];
         result.push(key);
-        console.log(result)
+        // console.log(result)
     } else if (count === obj[key]) {
         // 최빈값 같은 거 있으면 result에 일단 push
         result.push(key)

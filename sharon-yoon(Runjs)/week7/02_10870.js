@@ -6,8 +6,8 @@ const input= fs.readFileSync('dev/stdin').toString().trim().split('\n').map(Numb
 //예제.txt
 
 // console.log(input[0])
-// 팩토리얼 
-// 0! = 1 1! = 1 2! = 1!*2 3! = 2!*3
+// 피보나치
+// 피보나치 0 = 0 , 1 = 1 , 2번째부터는 앞 두 피보나치 수의 합
 function fibo(num) {
 // base
 // num이 0이랑 1일때만 자기자신

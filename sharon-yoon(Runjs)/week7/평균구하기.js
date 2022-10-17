@@ -10,6 +10,6 @@
 // [5,5]	    5
 
 function solution(arr) {
-    // reduce로 arr 합 구하고 arr.length로 나눠주기
+    // reduce로 arr 합 구하고 arr.length로 나눠주기  -> 평균
    return  arr.reduce((sum,cur) => sum+cur, 0) / arr.length
 }

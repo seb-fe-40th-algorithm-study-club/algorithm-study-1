@@ -5,11 +5,11 @@ function solution(n)
     // 내 풀이
     // n의 각 자릿수의 합을 리턴 
     // 각 자릿수 합이니까 일단 문자열-> 배열로 한 자릿수씩 뜯어서담기
-    let str = "" + n
-    let arr = [...str]
+    let str = "" + n //  '123'
+    let arr = [...str] // ['1','2','3']
         
     let result = 0 ;
-    // 배열 돌면서 el number로 바꿔주면서 더해주기 
+    // 배열 돌면서 el을 number로 바꿔주면서 더해주기 
     for(let el of arr) {
         result += +el
     }

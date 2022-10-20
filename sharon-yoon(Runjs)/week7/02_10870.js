@@ -14,7 +14,8 @@ function fibo(num) {
 if(num <= 1) return num;
 
 // recursive
-return fibo(num-1) + fibo(num-2)
+// num<=1 ? num :  fibo(num-1) + fibo(num-2)
+return  fibo(num-1) + fibo(num-2)
 }
 
 console.log(fibo(input[0]))

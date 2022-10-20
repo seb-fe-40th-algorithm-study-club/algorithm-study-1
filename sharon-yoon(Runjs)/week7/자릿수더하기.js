@@ -19,6 +19,8 @@ function solution(n)
 
 function solution2(n) {
      // 한줄 코딩
-    return (n+"").split("").reduce((acc,cur)=>acc+parseInt(cur),0)
+    // return (n+"").split("").reduce((acc,cur)=>acc+parseInt(cur),0)
+    return (n+"").split("").reduce((acc,cur)=>+acc+ + parseInt(cur),0)
+
     // n+"" -> '123'.split("") -> ['1','2','3'] -> parseInt로 숫자로 만들어서 더해주기 
 }

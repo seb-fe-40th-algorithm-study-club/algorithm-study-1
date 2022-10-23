@@ -5,7 +5,7 @@
 function solution(n) {
     // 숫자를 일단 문자열로 만들어야 split으로 배열로 만들 수 있다.
     // console.log((""+n).split('').reverse()) -> ['5','4'~]
-    // .map(el => +el) -> 배열에 문자열을 숫자로 바꾸기 
+    // .map(el => +el) -> 배열에 문자열을 숫자로 바꾸기 .
     return (""+n).split('').reverse().map(el => +el)
 }
 

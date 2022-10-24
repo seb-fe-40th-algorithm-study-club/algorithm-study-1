@@ -2,7 +2,7 @@ const fs = require('fs');
 let input = fs.readFileSync(process.platform === 'linux' ? 'dev/stdin' : 'test.txt').toString().trim().split(' ')
 
 //reverse()는 배열에만 쓸수있네
-const reverseInput = input.map((el)=>{
+const reverseInput = input.map((el) => {
   return +(el.split('').reverse().join(''));
 });
 

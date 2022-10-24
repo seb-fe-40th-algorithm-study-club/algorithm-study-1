@@ -1,12 +1,12 @@
 const fs = require('fs');
 const input = fs.readFileSync(process.platform === 'linux' ? 'dev/stdin' : 'test.txt')
-.toString().trim().split('\n')
+  .toString().trim().split('\n')
 
 const totalNum = input[0];
 const seriesNum = input[1];
 let sum = 0;
 
-for(let i=0; i<totalNum; i++){
+for (let i = 0; i < totalNum; i++) {
   sum += +seriesNum[i];
 }
 

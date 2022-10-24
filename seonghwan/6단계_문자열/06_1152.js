@@ -2,12 +2,12 @@
 //메모리 적게 사용
 const fs = require('fs');
 let input = fs.readFileSync(process.platform === 'linux' ? 'dev/stdin' : 'test.txt')
-.toString().trim()
+  .toString().trim()
 
 let preVal = ' ';
 let wordCnt = 0;
-for(let i=0; i<input.length; i++){
-  if(preVal===' ' && input[i]!==' ') wordCnt++; // 그전값이 공백이고 현재값이 공백이 아니면 새로운 단어가 나온것
+for (let i = 0; i < input.length; i++) {
+  if (preVal === ' ' && input[i] !== ' ') wordCnt++; // 그전값이 공백이고 현재값이 공백이 아니면 새로운 단어가 나온것
   preVal = input[i];
 }
 console.log(wordCnt);
@@ -19,9 +19,9 @@ console.log(wordCnt);
 //빈문자열을 split()하면 ['']가 리턴된다. 조심해야됨
 const fs = require('fs');
 let input = fs.readFileSync(process.platform === 'linux' ? 'dev/stdin' : 'test.txt')
-.toString().trim().split(' ')
+  .toString().trim().split(' ')
 
-let wordCnt=0;
+let wordCnt = 0;
 input[0] === '' ? console.log(0) : console.log(input.length)
 
 

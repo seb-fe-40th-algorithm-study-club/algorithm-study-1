@@ -6,7 +6,7 @@ const startCode = 'a'.charCodeAt();
 const endCode = 'z'.charCodeAt();
 
 for(let i=startCode; i<=endCode; i++){
-  console.log(input.indexOf( String.fromCharCode(i) ));
+  console.log(input.indexOf( String.fromCharCode(i) )); //
 }
 
 

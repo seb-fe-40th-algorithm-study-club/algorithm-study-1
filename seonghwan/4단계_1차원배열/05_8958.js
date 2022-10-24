@@ -17,5 +17,5 @@ for(let i=0; i<totalNum; i++){
       cnt = 0;
     }
   }
-  console.log(sum)
+  console.log(sum);
 }

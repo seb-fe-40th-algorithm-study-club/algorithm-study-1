@@ -1,5 +1,6 @@
 //프로그래머스 문자열 내 p와 y의 개수
 
+
 //실패..테스트가 1개는 맞고 1개는 틀린다...??
 function solution(s){
     let numberOfP = 0
